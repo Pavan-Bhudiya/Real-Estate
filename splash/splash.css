@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#splash-screen {
+    background-color: #3498db;
+    background-image:url(images/logo.jpeg);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+#splash-screen h1 {
+    font-size: 2em;
+}
+

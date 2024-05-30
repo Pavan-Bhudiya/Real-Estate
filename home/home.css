@@ -1,0 +1,62 @@
+body {
+    background-color:aquamarine;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*h1, h2, p, ul{
+    background-color:turquoise;
+    margin: 0;
+    padding: 0;
+}*/
+h1{
+    text-align: center;
+    
+}
+
+#home-page {
+    display: none;
+}
+
+#home-page h2 {
+    font-size: 2em;
+    color: #333;
+} 
+
+.home-page {
+    text-align: center;
+    color: white; /* Change text color as needed */
+    padding: 20px; /* Add padding to prevent text from touching edges */
+}
+  
+.hero h2 {
+    font-size: 2.5em;
+}
+  
+.hero p {
+    font-size: 1.2em;
+}
+
+
+
+.background-image {
+    background-image: url(images/home-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ensure background covers the whole viewport height */
+    position: relative;
+  }
+  
+  /* Overlay for text */
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity to your liking */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

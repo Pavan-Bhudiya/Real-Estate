@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/contact/contact.css" />
+    <title>Homeland Estate Agency - End Page</title>
+  </head>
+  <body>
+    <!-- Additional Sections (Suggestions) -->
+    <div class="testimonial-section">
+      <h2>Testimonials</h2>
+      <!-- Include testimonials from satisfied clients -->
+      <div class="testimonial-box">
+        <img
+          src="/images/customer 1.jpeg"
+          alt="Derrick Hale"
+          class="testimonial-picture"
+        />
+        <p class="testimonial-text">
+          "Customer 1 had a great experience using our real estate website. They
+          were able to find their dream home quickly and easily, and appreciated
+          the user-friendly interface. The customer support team was also very
+          helpful throughout the process."
+        </p>
+        <p class="testimonial-author">Derrick Hale</p>
+      </div>
+      <div class="testimonial-box">
+        <img
+          src="/images/customer 2.jpeg"
+          alt="Niklaus Mikaelson"
+          class="testimonial-picture"
+        />
+        <p class="testimonial-text">
+          "Customer 2 had a fantastic experience using Homeland Estate Agency's
+          real estate website. They were able to find a range of properties that
+          met their criteria, and the website's features made it easy to compare
+          and contrast different options. The customer support team was also
+          very helpful throughout the process."
+        </p>
+        <p class="testimonial-author">Niklaus Mikaelson</p>
+      </div>
+      <div class="testimonial-box">
+        <img
+          src="/images/customer 3.jpeg"
+          alt="Rimuru Tempest"
+          class="testimonial-picture"
+        />
+        <p class="testimonial-text">
+          "Customer 3 was extremely impressed with Homeland Estate Agency's real
+          estate website. They found the website to be intuitive and easy to
+          use, and appreciated the range of properties available. The customer
+          support team was also very helpful throughout the process, providing
+          timely and informative responses to all of their queries."
+        </p>
+        <p class="testimonial-author">Rimuru Tempest</p>
+      </div>
+      <!-- Add more testimonials as needed -->
+    </div>
+
+    <!-- Contact Form -->
+    <h2>Contact Us</h2>
+    <p>Email: info@homelandagency.com</p>
+    <p>Phone: +1 (123) 456-7890</p>
+    <form action="process_contact_form.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="message">Message:</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        cols="50"
+        required
+      ></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="contact-form-message" style="display: none">
+      Thank you!! Your message has been received
+    </p>
+    <!-- Appointment Form -->
+    <h2>Appointment Form</h2>
+    <form action="process_appointment_form.php" method="post">
+      <label for="appointment_name">Name:</label><br />
+      <input
+        type="text"
+        id="appointment_name"
+        name="appointment_name"
+        required
+      /><br />
+      <label for="appointment_property">Property Type:</label><br />
+      <input
+        type="radio"
+        id="appointment_home"
+        name="appointment_property"
+        value="home"
+        required
+      />
+      <label for="appointment_home">Home</label><br />
+      <input
+        type="radio"
+        id="appointment_land"
+        name="appointment_property"
+        value="land"
+        required
+      />
+      <label for="appointment_land">Land</label><br />
+      <label for="appointment_time">Preferred Visit Time:</label><br />
+      <input
+        type="datetime-local"
+        id="appointment_time"
+        name="appointment_time"
+        required
+      /><br />
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+    <p id="appointment-form-message" style="display: none">
+      Thank you!! Your message has been received
+    </p>
+    <script src="/contact/contact.js"></script>
+  </body>
+</html>
+contact us.html

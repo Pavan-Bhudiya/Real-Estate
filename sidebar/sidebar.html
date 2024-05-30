@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sidebar</title>
+    <style>
+      /* CSS styles for the sidebar */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .sidebar {
+        height: 100%;
+        width: 250px; /* Adjust the width as needed */
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #333; /* Dark background color */
+        overflow-y: auto; /* Enable vertical scrolling */
+        padding-top: 20px;
+        transition: width 0.5s;
+        z-index: 1000; /* Ensure sidebar is above other content */
+      }
+
+      .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .sidebar a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #fff; /* Text color */
+        transition: background-color 0.3s;
+      }
+
+      .sidebar a:hover {
+        background-color: #555; /* Darker background on hover */
+      }
+
+      .content {
+        margin-left: 250px; /* Adjust based on sidebar width */
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar navigation -->
+    <nav class="sidebar">
+      <ul>
+        <!-- Sidebar links -->
+        <li><a href="/home/home.html" target="main_content">Home</a></li>
+        <li><a href="/properties/properties.html" target="main_content">Properties</a></li>
+        <li><a href="/about-us/about us.html" target="main_content">About Us</a></li>
+        <li><a href="/contact/contact us.html" target="main_content">Contact</a></li>
+        <li>
+          <a href="/advertisement/advertisement.html" target="main_content">Advertisement</a>
+        </li>
+        <li><a href="/exit/exit.html" target="main_content">Exit</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content area -->
+    <div class="content">
+      <!-- Your main content goes here -->
+    </div>
+  </body>
+</html>

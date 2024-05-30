@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Transactions</title>
+    <link rel="stylesheet" href="/transaction/transaction.css">
+    <style>
+        body {
+            background-image: url('images/backgroundimage.jpeg');
+            background-size: cover;
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Online Transactions</h2>
+    <form action="process_transaction.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="product">Select Product:</label>
+        <select id="product" name="product" required>
+        <option value="Homes">Homes</option>
+        <option value="Lands">Lands</option>
+        </select>
+
+
+        <label for="payment">Payment Method:</label><br>
+        <input type="radio" id="credit_card" name="payment_method" value="Credit Card" checked>
+        <label for="credit_card">Credit Card</label><br>
+        <input type="radio" id="paypal" name="payment_method" value="PayPal">
+        <label for="paypal">PayPal</label><br>
+        <input type="radio" id="bank_transfer" name="payment_method" value="Bank Transfer">
+        <label for="bank_transfer">Bank Transfer</label><br><br>
+            
+        </select>
+
+        <input type="submit" value="Complete Transaction">
+    </form>
+    <p>Thank you for choosing Homeland  Estate Agency ! Your order will be processed shortly.</p>
+</body>
+</html> 
